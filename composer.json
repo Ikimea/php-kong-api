@@ -1,0 +1,28 @@
+{
+    "name": "ikimea/kong-api",
+    "type": "library",
+    "description": "Kong api",
+    "keywords": ["kong", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ikimea",
+            "homepage": "http://ikimea.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "psr/http-message": "^1.0",
+        "psr/cache": "^1.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": { "Ikimea\\Kong\\": "lib/Kong" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Ikimea\\Kong\\Tests\\": "test" }
+    }
+}
